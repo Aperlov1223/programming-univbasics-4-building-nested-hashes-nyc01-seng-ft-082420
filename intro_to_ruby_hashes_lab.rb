@@ -1,14 +1,14 @@
 def base_hash
-  :railroads
+  :railroads => {  }
   # Remember implicit return! We're returning this new Hash _without_ the
   # keyword "return." Nice and neat.
 end
 
 def monopoly_with_second_tier
-  :railroads
+  :railroads => {
     :pieces => 4,
     :rent_in_dollars => {},
-    :names => {}
+    :names => { }
   }
 
   # When you start writing the implementation for this method, copy the Hash
@@ -19,7 +19,7 @@ def monopoly_with_second_tier
 end
 
 def monopoly_with_third_tier
-  :railroads
+  :railroads => {
     :pieces => 4,
     :rent_in_dollars => {
       :one_piece_owned => 25,
@@ -42,7 +42,7 @@ def monopoly_with_third_tier
 end
 
 def monopoly_with_fourth_tier
-  :railroads
+  :railroads => {
     :pieces => 4,
     :rent_in_dollars => {
       :one_piece_owned => 25,
